@@ -1,0 +1,44 @@
+/* Module Build File */
+
+description     = "Provision an ACE application file to EDGE devices"
+ext {
+}
+niagaraModule {
+  moduleName = "aceAppProv"
+  preferredSymbol = "aap"
+  runtimeProfile = "wb"
+}
+
+dependencies {
+  compile "Tridium:nre:4.10"
+  compile "Tridium:baja:4.10"
+  compile "Tridium:ace-rt:4.10"
+  compile "Tridium:ace-wb:4.10"
+  compile "Tridium:bajaui-wb:4.10"
+  compile "Tridium:batchJob-rt:4.10"
+  compile "Tridium:batchJob-wb:4.10"
+  compile "Tridium:driver-rt:4.10"
+  compile "Tridium:driver-wb:4.10"
+  compile "Tridium:fox-rt:4.10"
+  compile "Tridium:gx-rt:4.10"
+  compile "Tridium:ndriver-rt:4.10"
+  compile "Tridium:ndriver-wb:4.10"
+  compile "Tridium:platform-wb:4.10"
+  compile "Tridium:provisioningNiagara-wb:4.10"
+  compile project(":aceAppProv-rt")
+  niagaraModuleTestCompile compile('Tridium:history-rt')
+  niagaraModuleTestCompile compile('Tridium:niagaraDriver-rt')
+  niagaraModuleTestCompile compile('Tridium:test-wb')
+  testUberjar("org.mockito:mockito-core:3.12.4")
+}
+
+moduleTestJar {
+  from('srcTest') {
+    include 'rc/'
+  }
+}
+
+// Force test task to run even if Gradle thinks it is up to date
+niagaraTest {
+  outputs.upToDateWhen { false }
+}

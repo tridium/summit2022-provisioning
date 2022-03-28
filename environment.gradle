@@ -1,0 +1,11 @@
+/*
+ * Copyright 2022 ACME, All Rights Reserved.
+ */
+/* Environment Configuration File */
+
+// Change niagara_home and niagara_user_home as needed to point to the
+// correct path to your desired Niagara install and its associated
+// user home
+gradle.ext.niagara_dev_home = "C:/Users/E507094/Documents/Tridium/summit413"
+gradle.ext.niagara_home = "c:/niagara/niagara-4.13.0.5.429"
+gradle.ext.niagara_user_home = "C:/Users/E507094/Niagara4.13/tridium"

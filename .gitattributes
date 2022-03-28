@@ -1,0 +1,26 @@
+# See https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings
+# Default text to auto -- overrides any misconfiguration of core.autocrlf
+* text=auto
+
+# Always set source files to text -> auto
+*.c text
+*.h text
+*.cpp text
+*.java text
+*.xml text
+*.js text
+*.md text
+*.py text
+*.gradle text
+*.kts text
+*.kt text
+
+# shell scripts are always lf
+*.sh text eol=lf
+# batch files are always crlf
+*.bat text eol=crlf
+
+# Explicit settings for files we know to be problematic
+gradlew                                                                 text eol=lf
+gradle/build-versions.properties                                        merge=ours
+gradle/patch-versions.properties                                        merge=ours

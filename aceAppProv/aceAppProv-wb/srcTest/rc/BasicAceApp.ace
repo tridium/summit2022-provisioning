@@ -1,0 +1,305 @@
+{
+  "comps": [{
+    "children": [
+      {
+        "children": [
+          {
+            "children": [],
+            "id": 2,
+            "name": "PlatformService",
+            "props": [
+              {
+                "name": "meta",
+                "value": 201526272
+              },
+              {
+                "name": "exeParam",
+                "value": 0
+              }
+            ],
+            "type": {
+              "kitName": "core.sys",
+              "name": "PlatformService"
+            }
+          },
+          {
+            "children": [],
+            "id": 3,
+            "name": "CommService",
+            "props": [
+              {
+                "name": "meta",
+                "value": 202050560
+              },
+              {
+                "name": "exeParam",
+                "value": 0
+              },
+              {
+                "name": "logLevel",
+                "value": 4
+              }
+            ],
+            "type": {
+              "kitName": "core.comm",
+              "name": "CommService"
+            }
+          }
+        ],
+        "id": 1,
+        "name": "Services",
+        "props": [
+          {
+            "name": "meta",
+            "value": 184621056
+          },
+          {
+            "name": "exeParam",
+            "value": 0
+          }
+        ],
+        "type": {
+          "kitName": "core.sys",
+          "name": "Folder"
+        }
+      },
+      {
+        "children": [],
+        "id": 5,
+        "name": "Add",
+        "props": [
+          {
+            "name": "meta",
+            "value": 185406208
+          },
+          {
+            "name": "exeParam",
+            "value": 0
+          },
+          {
+            "name": "in1",
+            "status": 64,
+            "value": 0
+          },
+          {
+            "name": "in2",
+            "status": 64,
+            "value": 0
+          },
+          {
+            "name": "in3",
+            "status": 64,
+            "value": 0
+          },
+          {
+            "name": "in4",
+            "status": 64,
+            "value": 0
+          }
+        ],
+        "type": {
+          "kitName": "control.math",
+          "name": "Add"
+        }
+      },
+      {
+        "children": [],
+        "id": 6,
+        "name": "Add3",
+        "props": [
+          {
+            "name": "meta",
+            "value": 168634368
+          },
+          {
+            "name": "exeParam",
+            "value": 0
+          },
+          {
+            "name": "in2",
+            "status": 64,
+            "value": 0
+          },
+          {
+            "name": "in3",
+            "status": 64,
+            "value": 0
+          },
+          {
+            "name": "in4",
+            "status": 64,
+            "value": 0
+          }
+        ],
+        "type": {
+          "kitName": "control.math",
+          "name": "Add"
+        }
+      },
+      {
+        "children": [],
+        "id": 7,
+        "name": "Or2",
+        "props": [
+          {
+            "name": "meta",
+            "value": 186192640
+          },
+          {
+            "name": "exeParam",
+            "value": 0
+          },
+          {
+            "name": "inA",
+            "status": 64,
+            "value": false
+          },
+          {
+            "name": "inB",
+            "status": 64,
+            "value": false
+          },
+          {
+            "name": "inC",
+            "status": 64,
+            "value": false
+          },
+          {
+            "name": "inD",
+            "status": 64,
+            "value": false
+          }
+        ],
+        "type": {
+          "kitName": "control.logic",
+          "name": "Or"
+        }
+      },
+      {
+        "children": [],
+        "id": 8,
+        "name": "Or3",
+        "props": [
+          {
+            "name": "meta",
+            "value": 169420800
+          },
+          {
+            "name": "exeParam",
+            "value": 0
+          },
+          {
+            "name": "inB",
+            "status": 64,
+            "value": false
+          },
+          {
+            "name": "inC",
+            "status": 64,
+            "value": false
+          },
+          {
+            "name": "inD",
+            "status": 64,
+            "value": false
+          }
+        ],
+        "type": {
+          "kitName": "control.logic",
+          "name": "Or"
+        }
+      }
+    ],
+    "id": 0,
+    "name": "App",
+    "props": [
+      {
+        "name": "meta",
+        "value": 0
+      },
+      {
+        "name": "exeParam",
+        "value": 0
+      },
+      {
+        "name": "appName",
+        "value": ""
+      },
+      {
+        "name": "appVersion",
+        "value": ""
+      },
+      {
+        "name": "frameworkVersion",
+        "value": ""
+      },
+      {
+        "name": "scanPeriod",
+        "value": 50
+      },
+      {
+        "name": "minSleepTime",
+        "value": 20
+      },
+      {
+        "name": "timeToSteadyState",
+        "value": 0
+      },
+      {
+        "name": "logLevel",
+        "value": 4
+      },
+      {
+        "name": "scansLevel2",
+        "value": 2
+      },
+      {
+        "name": "scansLevel3",
+        "value": 4
+      },
+      {
+        "name": "scansLevel4",
+        "value": 8
+      },
+      {
+        "name": "scanDiagEnable",
+        "value": false
+      }
+    ],
+    "type": {
+      "kitName": "core.sys",
+      "name": "App"
+    }
+  }],
+  "kits": [
+    {
+      "checksum": 294383994,
+      "name": "control.math"
+    },
+    {
+      "checksum": 1296852547,
+      "name": "core.sys"
+    },
+    {
+      "checksum": 184729844,
+      "name": "core.comm"
+    },
+    {
+      "checksum": 1857218014,
+      "name": "control.logic"
+    }
+  ],
+  "links": [
+    {
+      "from": "7.out",
+      "to": "8.inA"
+    },
+    {
+      "from": "5.out",
+      "to": "6.in1"
+    }
+  ],
+  "version": "0.1",
+  "product":	"Edge 10",
+  "vendor":	"Tridium"
+}

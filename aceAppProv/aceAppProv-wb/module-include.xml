@@ -1,0 +1,11 @@
+<!-- Module Include File -->
+<!-- Types -->
+<types>
+  <!-- Type Example:<type name="MyClass" class="com.acme.BMyClass"/> -->
+  <!--com.acme.aceAppProv.ui-->
+  <type class="com.acme.aceAppProv.ui.BAceAppInstallFactory" name="AceAppInstallFactory">
+    <agent>
+      <on type="aceAppProv:AceAppInstallStep"/>
+    </agent>
+  </type>
+</types>

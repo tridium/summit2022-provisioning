@@ -1,0 +1,18 @@
+<permissions>
+  <niagara-permission-groups type="all">
+    <!-- Insert any global permissions here. -->
+  </niagara-permission-groups>
+  <niagara-permission-groups type="workbench">
+    <!-- Insert any workbench specific permissions here. -->
+  </niagara-permission-groups>
+  <niagara-permission-groups type="station">
+    <req-permission> // Required permission
+      <name>KEY_STORE</name>
+      <purposeKey>This module needs to check exemptions.</purposeKey>
+      <parameters>
+        <parameter name="keystores" value="userExemptionStore"/>
+        <parameter name="actions" value="read"/>
+      </parameters>
+    </req-permission>
+  </niagara-permission-groups>
+</permissions>

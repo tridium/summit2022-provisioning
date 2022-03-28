@@ -1,0 +1,191 @@
+{
+  "comps": [{
+    "children": [
+      {
+        "children": [{
+          "children": [],
+          "id": 2,
+          "name": "Reheat",
+          "props": [
+            {
+              "name": "meta",
+              "value": 269292800
+            },
+            {
+              "name": "exeParam",
+              "value": 0
+            },
+            {
+              "name": "enable",
+              "value": false
+            },
+            {
+              "name": "delay",
+              "value": 0
+            },
+            {
+              "name": "hysteresis",
+              "value": 0
+            },
+            {
+              "name": "threshold1",
+              "value": 0
+            },
+            {
+              "name": "threshold2",
+              "value": 0
+            },
+            {
+              "name": "threshold3",
+              "value": 0
+            },
+            {
+              "name": "threshold4",
+              "value": 0
+            }
+          ],
+          "type": {
+            "kitName": "control.hvac",
+            "name": "ReheatSequence"
+          }
+        }],
+        "id": 1,
+        "name": "LinearSeq",
+        "props": [
+          {
+            "name": "meta",
+            "value": 269225984
+          },
+          {
+            "name": "exeParam",
+            "value": 0
+          },
+          {
+            "name": "inMin",
+            "value": 45.73
+          },
+          {
+            "name": "inMax",
+            "value": 259.85
+          },
+          {
+            "name": "numOuts",
+            "value": 10
+          },
+          {
+            "name": "delay",
+            "value": 0
+          },
+          {
+            "name": "isRotating",
+            "value": false
+          },
+          {
+            "name": "rotateTime",
+            "value": 1
+          }
+        ],
+        "type": {
+          "kitName": "control.hvac",
+          "name": "SequenceLinear"
+        }
+      },
+      {
+        "children": [],
+        "id": 3,
+        "name": "Platform",
+        "props": [
+          {
+            "name": "meta",
+            "value": 268636160
+          },
+          {
+            "name": "exeParam",
+            "value": 0
+          }
+        ],
+        "type": {
+          "kitName": "core.sys",
+          "name": "PlatformService"
+        }
+      }
+    ],
+    "id": 0,
+    "name": "App",
+    "props": [
+      {
+        "name": "meta",
+        "value": 0
+      },
+      {
+        "name": "exeParam",
+        "value": 0
+      },
+      {
+        "name": "appName",
+        "value": ""
+      },
+      {
+        "name": "appVersion",
+        "value": ""
+      },
+      {
+        "name": "frameworkVersion",
+        "value": ""
+      },
+      {
+        "name": "scanPeriod",
+        "value": 50
+      },
+      {
+        "name": "minSleepTime",
+        "value": 20
+      },
+      {
+        "name": "timeToSteadyState",
+        "value": 0
+      },
+      {
+        "name": "logLevel",
+        "value": 4
+      },
+      {
+        "name": "scansLevel2",
+        "value": 2
+      },
+      {
+        "name": "scansLevel3",
+        "value": 4
+      },
+      {
+        "name": "scansLevel4",
+        "value": 8
+      },
+      {
+        "name": "scanDiagEnable",
+        "value": false
+      }
+    ],
+    "type": {
+      "kitName": "core.sys",
+      "name": "App"
+    }
+  }],
+  "kits": [
+    {
+      "checksum": 1296852547,
+      "name": "core.sys"
+    },
+    {
+      "checksum": 4186195439,
+      "name": "control.hvac"
+    }
+  ],
+  "links": [{
+    "from": "1.out3",
+    "to": "2.in"
+  }],
+  "version": "0.1",
+  "product":	"Edge 10",
+  "vendor":	"Tridium"
+}

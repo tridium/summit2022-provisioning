@@ -1,0 +1,31 @@
+{
+    "version": "0.0.1",
+    "kits": [
+        {
+            "name": "core.sys",
+            "checksum": 2721352154
+        }
+    ],
+    "comps": [
+        {
+            "id": 0,
+            "type": {
+                "kitName": "core.sys",
+                "name": "App"
+            },
+            "name": "app",
+            "props": [
+                {
+                    "name": "deviceName",
+                    "value": "basic"
+                },
+                {
+                    "name": "meta",
+                    "value": 0
+                }
+            ]
+        }
+    ],
+    "links": [
+    ]
+}

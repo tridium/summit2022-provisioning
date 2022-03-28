@@ -1,0 +1,36 @@
+#
+# Lexicon for the aceAppProv module.
+#
+
+# These are used by the factory class for workbench display
+AceAppInstallFactory.displayName=ACE App Install
+AceAppInstallFactory.icon=module://icons/x16/app.png
+AceAppInstallFactory.description=Select an ACE file to install
+
+AceAppInstallFactory.fileFilter=ACE Application Files
+AceAppInstallFactory.warningTitle=ACE Application Warning
+AceAppInstallFactory.deployWarning=The existing ACE application on all target devices will be overwritten.
+AceAppInstallFactory.backupWarning=Copy the existing ACE files from target devices if you desire a backup of the existing applications.
+
+AceAppInstallFactory.copyAceFile.complete=Copy ACE File Completed
+AceAppInstallFactory.copyAceFile.completeDetail=The selected ACE file {0} has been copied to supervisor folder {1}.
+AceAppInstallFactory.copyAceFile.error=Copy ACE File Failed
+AceAppInstallFactory.copyAceFile.errorDetail=An error occurred copying the selected ACE file to supervisor.
+
+AceAppInstallFactory.deleteExisting.title=Overwrite Existing ACE File
+AceAppInstallFactory.deleteExisting.message=The following file will be replaced on the supervisor: {0}.
+AceAppInstallFactory.deleteExisting.error=There was an error deleting {0}. No files were copied.
+
+# These are used by the step class for job execution information
+AceAppInstallStep.display=Install ACE application file {0}.
+AceAppInstallStep.start=ACE application installation started on target device {0}.
+AceAppInstallStep.downloadRunning=ACE application installation job {0} state is {1}.
+
+AceAppInstallStep.failed.notAceDevice=Target device {0} does not contain necessary ACE components (network and device).
+AceAppInstallStep.failed.aceDeviceNotFound=The necessary ACE device was not found on target device {0}.
+AceAppInstallStep.failed.aceFileNotFound=The ACE file {0} was not found on the supervisor.
+AceAppInstallStep.failed.jobState=Install ACE file job state = {0}.
+AceAppInstallStep.failed.missingModule=There are missing modules on target device {0} required for this ACE file.\n{1}.
+AceAppInstallStep.failed.installJobStartFailed=Job to install ACE file to target device {0} failed.
+AceAppInstallStep.failed.installFailed=Installation of ACE file to target device {0} failed.
+AceAppInstallStep.failed.exception=An exception occurred when installing the ACE file to target device {0}.

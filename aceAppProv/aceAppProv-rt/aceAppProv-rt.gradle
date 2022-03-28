@@ -1,0 +1,34 @@
+/* Module Build File */
+
+description     = "Provision an ACE application file to EDGE devices"
+ext {
+}
+niagaraModule {
+  moduleName = "aceAppProv"
+  preferredSymbol = "aap"
+  runtimeProfile = "rt"
+
+  modulePart {
+      name = "aceAppProv-wb"
+      runtimeProfile = "wb"
+  }
+}
+
+dependencies {
+  compile "Tridium:nre:4.10"
+  compile "Tridium:baja:4.10"
+  compile "Tridium:ace-rt:4.10"
+  compile "Tridium:alarm-rt:4.10"
+  compile "Tridium:batchJob-rt:4.10"
+  compile "Tridium:driver-rt:4.10"
+  compile "Tridium:file-rt:4.10"
+  compile "Tridium:fox-rt:4.10"
+  compile "Tridium:ndriver-rt:4.10"
+  compile "Tridium:platform-rt:4.10"
+  compile "Tridium:provisioningNiagara-wb:4.10"
+}
+
+moduleTestJar {
+  from('srcTest') {
+  }
+}

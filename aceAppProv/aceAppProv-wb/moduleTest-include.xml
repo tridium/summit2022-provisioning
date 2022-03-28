@@ -1,0 +1,8 @@
+<!-- Module Include File -->
+<!-- Types -->
+<types>
+  <!-- Type Example:<type name="MyClass" class="com.acme.BMyClass"/> -->
+  <!--com.acme.aceAppProv.test-->
+  <type class="com.acme.aceAppProv.test.BAceAppInstallStepTest" name="AceAppInstallStepTest"/>
+  <type class="com.acme.aceAppProv.test.BTestPlatformConnection" name="TestPlatformConnection"/>
+</types>
